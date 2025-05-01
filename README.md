@@ -152,4 +152,4 @@ The application maintains detailed logs in `app.log` for tracking operations and
 
 ## License
 
-[Add your license information here]
+GNU GENERAL PUBLIC LICENSE
