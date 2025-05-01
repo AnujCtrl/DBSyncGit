@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```plaintext
 # Authentication
 APP_USERNAME=admin
-APP_PASSWORD=ratulkasecurity
+APP_PASSWORD=password
 
 # Router Database Configuration
 ROUTER_DB_HOST=your_router_host
@@ -96,7 +96,7 @@ uvicorn app.main:app --reload
 
 3. Authenticate using the credentials specified in your `.env` file:
    - Username: admin
-   - Password: ratulkasecurity
+   - Password: password
 
 ## Environment Flow
 
