@@ -21,15 +21,17 @@ A FastAPI-based application for managing and tracking database changes across mu
 ## Installation
 
 1. Clone the repository:
-```bash
-git clone <repository-url>
-cd database-migrator
-```
+
+   ```bash
+   git clone <repository-url>
+   cd database-migrator
+   ```
 
 2. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Create a `.env` file in the root directory with the following variables:
 
@@ -63,7 +65,7 @@ ENTERPRISE_DB_PASSWORD=your_enterprise_password
 
 ## Directory Structure
 
-```
+```markdown
 database-migrator/
 ├── backend/
 │   ├── app/
@@ -85,10 +87,11 @@ database-migrator/
 ## Usage
 
 1. Start the backend API server:
-```bash
-cd backend
-uvicorn app.main:app --reload
-```
+
+   ```bash
+   cd backend
+   uvicorn app.main:app --reload
+   ```
 
 2. Access the API documentation through your web browser at:
    - Swagger UI: `http://localhost:8000/docs`
@@ -101,7 +104,8 @@ uvicorn app.main:app --reload
 ## Environment Flow
 
 The application follows a specific promotion path for changes:
-```
+
+```markdown
 QA -> Production -> Enterprise
 ```
 
@@ -110,16 +114,19 @@ Changes must be applied in QA first before they can be promoted to Production, a
 ## API Endpoints
 
 ### 1. Database Change Management
+
 - Execute SQL queries against selected databases
 - Track changes with unique change IDs
 - Automatic version control of SQL scripts
 
 ### 2. Pending Changes
+
 - View changes ready for promotion from previous environment
 - Select and apply pending changes
 - Preview SQL content before application
 
 ### 3. Change History
+
 - Historical view of all changes in current environment
 - Filter changes by date range
 - Preview SQL content of past changes
